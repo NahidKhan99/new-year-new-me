@@ -1,37 +1,143 @@
-.container{
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0 ;
+    font-family:  'Work Sans', sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-image: url(../images/banner/banner2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 110vh;
     display: flex;
-    
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 100px;
 }
 .banner{
-    width: 1900px;
-    height: 809px;
-   background-image: url(../images/banner/banner2.png);
-   background-repeat: no-repeat;
-   
+    padding-right: 130px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    justify-content: flex-end;
 }
-.banner-tittel{
-   text-align: right; 
-   color: #151414;
-   margin: 216px 200px 800px 500px;
-}
-.banner-sub-tittel{
+.banner h1{
+    font-style: normal;
     font-weight: 700;
-font-size: 65px;
-
+    font-size: 65px;
+    line-height: 76px;
+    text-align: right;
 }
-.banner-disc{
-    color: #757575;
-    font-weight: 400;
-font-size: 16px;   
+.banner p{
+    font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+text-align: right;
+}
+.btn-primary{
+    height: 64px;
+    background: #FD6E0A;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 20px;
+    border: 0;
+    padding: 18px 20px;
+}
+ /* Failures */
+ .failures > * {
+    flex-basis: 100%;
+}
+ .failures{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 87px;
+    margin-bottom: 100px;
+ }
+ .failures-container h1{
+    font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 47px;
+color: #151414;
+margin-bottom: 47px;
+
+ }
+ .failures-container p{
+    font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+margin-bottom: 16px;
+
+ }
+ .boxitem{
+    display: flex ;
+    flex-direction: column;
+    align-items: flex-start;
+
+ }
+ .box-check{
+    display: flex;
+    gap: 5px;
  }
 
- .btn-primary{
-    font-weight: 600;
-font-size: 20px;
- background:#FD6E0A ;
- color: #FFFFFF;
- height: 64px;
- border-radius: 5px;
- border: 0;
- padding: 18px 35px;
+ .box-check i{
+    color: #16D887;
+    gap: 25px;
  }
+ .box-check p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #444343;
+ }
+ /*  My Plan  */
+
+.plan{
+    margin-bottom: 130px;
+}
+.plan-titel h2{
+    font-style: normal;
+    font-weight: 700;
+font-size: 40px;
+color: #151414;
+text-align: center;
+margin-bottom: 50px;
+}
+.mypaln{
+display: flex;
+align-items: center;
+gap: 100px;
+justify-content: center;
+}
+.planitem{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+gap: 15px;
+text-align: center;
+}
+.planitem h5{
+    font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 35px;
+text-align: center;
+color: #151414;
+}
+.planitem p{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 29px;
+    text-align: center;
+    color: #737272;
+}
